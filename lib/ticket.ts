@@ -18,7 +18,7 @@ interface TicketResponse {
 }
 
 export async function submitTicket(formData: TicketFormData): Promise<TicketResponse> {
-  const response = await fetch('http://localhost:8080/customer-service-tickets/customer/tricket', {
+  const response = await fetch('https://api.zhienw.com/customer-service-tickets/customer/tricket', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
